@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-show-list',
   templateUrl: './show-list.page.html',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowListPage implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
+
