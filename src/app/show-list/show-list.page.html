@@ -12,7 +12,7 @@
 
 <ion-content>
 
-  <ion-list >
+  <ion-list hidden>
     <ion-item>
       <ion-img src="/assets/image/user.png" style="width: 32px;"></ion-img>
       <ion-text style="margin-left: 10px;">james</ion-text>
@@ -24,5 +24,25 @@
       </ion-buttons>
     </ion-item>
   </ion-list>
+
+  <ion-list>
+    <ion-item *ngFor="let name of names" >
+      <ion-img src="/assets/image/user.png" style="width: 32px;"></ion-img>
+      <ion-text style="margin-left: 10px;">{{name}}</ion-text>
+      <ion-buttons slot="end">
+        <ion-button (click)="removecontact(item)">
+          <ion-icon name="trash"></ion-icon>
+          Delete
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-input placeholder="Add Contact Name" [(ngModel)]="contactname"></ion-input>
+    <ion-button (click)="addcontact()">
+      <ion-icon name="add"></ion-icon>Add
+    </ion-button>
+  </ion-item>
 
 </ion-content>
