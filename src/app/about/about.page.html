@@ -1,0 +1,58 @@
+<ion-content>
+
+  <div class="header-bg"></div>
+  <div class="header-content">
+    <img
+      src="https://scontent.fbkk2-4.fna.fbcdn.net/v/t1.6435-9/120299936_3372775166170175_5819816527779744551_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeENd4W6Ihgj9A-JGlSntS840bI6ZMyRiHXRsjpkzJGIdZedO9RPgReyqXSy9fAWCu32vdzKkpSukDbLXdH3Ohqf&_nc_ohc=P2_PbUbE9KcAX-crizb&tn=HRyAVxpZaK7G7JZR&_nc_ht=scontent.fbkk2-4.fna&oh=6007ebb065cd4ce30090ccbbaa1e86f0&oe=614825EE"
+      alt="">
+
+    <ion-label>
+      <h1>About Me</h1>
+      <p>{{name1}}</p>
+    </ion-label>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <p>name</p>
+        <h2>{{name1}}</h2>
+      </ion-col>
+      <ion-col>
+        <p>name</p>
+        <h2>{{name1}}</h2>
+      </ion-col>
+      <ion-col>
+        <p>name</p>
+        <h2>{{name1}}</h2>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="card1">
+          <img src="assets/icon/favourite.png" alt="" style="width: 40%;">
+          <ion-card-header>
+            <p>Education</p>
+            <h5>{{subject1}}</h5>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class="card2">
+          <img src="assets/icon/worldwide.png" alt="" style="width: 40%;">
+          <ion-card-header>
+            <p>Company's</p>
+            <h5>{{conpanymame1}}</h5>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-button (click)="goback()" color="dark" expand="full">Back</ion-button>
+</ion-content>

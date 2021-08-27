@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'show-list',
     loadChildren: () => import('./show-list/show-list.module').then( m => m.ShowListPageModule)
   },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
+  },
+  {
+    path: 'finaltest',
+    loadChildren: () => import('./finaltest/finaltest.module').then( m => m.FinaltestPageModule)
+  },
 ];
 
 @NgModule({
