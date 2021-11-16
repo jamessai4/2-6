@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Covid 19</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let item of x">
+    <ion-card-title>
+      <ion-item>
+        <div>วันที่ :</div>
+        <div>{{item.txn_date}}</div>
+      </ion-item>
+      <ion-item>
+        <div>ผู้ติดเชื้อรายใหม่:</div>
+        <div>{{item.new_case}}</div>
+      </ion-item>
+      <ion-item>
+        <div>ยอดรวมผู้ติดเชื้อ:</div>
+        <div>{{item.total_case}}</div>
+      </ion-item>
+    </ion-card-title>
+  </ion-card>
+</ion-content>
