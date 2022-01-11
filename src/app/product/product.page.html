@@ -6,66 +6,20 @@
     <ion-title style="text-align: center;">
       Product
     </ion-title>
-    <ion-buttons slot="end">
-      <ion-button>
-        <ion-icon name="cart"></ion-icon>
-      </ion-button>
-      <ion-badge>0</ion-badge>
-    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-slides pager="true" [options]="{autoplay:true}">
-    <ion-slide>
-      <ion-img src="https://www.mcshop.com/mcshop/v1/media/Menu-Banner-s-toni.png?width=1280"></ion-img>
-    </ion-slide>
-    <ion-slide>
-      <ion-img src="https://www.mcshop.com/mcshop/v1/media/Menu-Banner-s-save-my-hips.png?width=1280"></ion-img>
-    </ion-slide>
-  </ion-slides>
 
-  <ion-card>
-    <ion-img src="https://bodyglove.co.th/pub/media/wysiwyg/slider/2900x1200_4__1.jpg"></ion-img>
-    <ion-card-header>
-      <ion-card-title>Body Glove</ion-card-title>
-      <ion-card-subtitle>Body Glove</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facere minima sed, amet, ex tempora placeat sit
-        ab, magnam esse dolorem enim veritatis accusamus impedit illum id cum facilis eveniet.
-      </p>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-item *ngFor="let number of ['james','test']" >
+  <ion-item *ngFor="let item of items|async">
     <ion-list>
-      <ion-grid>
-        <ion-row>
-          <!--left col show image-->
-          <ion-col>
-            <ion-img
-              src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/440681/sub/goods_440681_sub13.jpg?width=1600&impolicy=quality_75">
-            </ion-img>
-          </ion-col>
-
-          <!--Col show details-->
-          <ion-col>
-            <div class="distant">{{number}}</div>
-            <div class="distant">500 ฿</div>
-            <div class="distant">
-              <ion-badge color="success" style="margin-right:10px ;">M</ion-badge>
-              <ion-badge color="warning" style="margin-right:10px ;">L</ion-badge>
-              <ion-badge color="danger">XL</ion-badge>
-            </div>
-            <ion-button expand="block">Add to card</ion-button>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-
+      <div>ชื่อ :{{item .name}}</div>
+      <div>รหัสประจำตัว :{{item .number_id}}</div>
+      <div>กิจกรรม :{{item .work}}</div>
     </ion-list>
   </ion-item>
+
+  <ion-button expand="block" color="success" routerLink="/add">เพิ่มข้อมูล</ion-button>
 
 
 </ion-content>

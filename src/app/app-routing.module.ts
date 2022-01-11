@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'callapi',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'callapi',
     loadChildren: () => import('./callapi/callapi.module').then( m => m.CallapiPageModule)
+  },  {
+    path: 'add',
+    loadChildren: () => import('./add/add.module').then( m => m.AddPageModule)
   },
+
 
 ];
 
