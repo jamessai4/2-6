@@ -21,13 +21,12 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     AppRoutingModule,
     HttpClientModule,
     AngularFireModule.initializeApp({
-      apiKey: "AIzaSyCXEwRC2DV_mZ_se8Lef-Wf7D2Mz_C5UQE",
-      authDomain: "testfirebase-a2ac1.firebaseapp.com",
-      databaseURL: "https://testfirebase-a2ac1-default-rtdb.asia-southeast1.firebasedatabase.app",
-      projectId: "testfirebase-a2ac1",
-      storageBucket: "testfirebase-a2ac1.appspot.com",
-      messagingSenderId: "419882905830",
-      appId: "1:419882905830:web:f2ea5fd98fa0b5126c0b27"
+      apiKey: "AIzaSyCf31hFTrDCi3b1Eszf3clgRDqATSU_ExM",
+      authDomain: "app2-6.firebaseapp.com",
+      projectId: "app2-6",
+      storageBucket: "app2-6.appspot.com",
+      messagingSenderId: "567926366936",
+      appId: "1:567926366936:web:cabab3beddd096a9d36dad"
     }),
     AngularFirestoreModule,
 
